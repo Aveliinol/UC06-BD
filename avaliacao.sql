@@ -125,7 +125,7 @@ select cliente.nome, servico.nome, servico.descricao, servico.tipo_servico from 
 select tecnico.nome, servico.preco, servico.nome from tecnico, servico where (servico.preco > 400);
 
 --Atualize o preço de todos os serviços do tipo "Manutenção" para 350, se o preço atual for inferior a 350.
-select * from servico update servico set preco = 350 where tipo_servico = 'Manutenção' and preco = 350 select * from servico;
+update servico set preco = 350 where tipo_servico = 'Manutenção' and preco < 350; select * from servico;
 
 --Exclua todos os técnicos que não têm chamados registrados.
 select *from tecnico where id not in (select distinct tecnico_id from chamado);
