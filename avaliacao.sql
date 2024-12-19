@@ -117,7 +117,7 @@ select nome from tecnico where especialidade = 'Manutenção';
 
 --Mostre os nomes dos clientes e o valor total pago por cada um deles.
 select nome, valor_pago from pagamento join cliente on pagamento.cliente_id = cliente.id;
-
+ 
 --Liste os clientes e os serviços que eles solicitaram, incluindo a descrição do serviço.
 select cliente.nome, servico.nome, servico.descricao, servico.tipo_servico from servico join cliente on servico.id = cliente.id;
 
