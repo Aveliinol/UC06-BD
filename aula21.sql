@@ -1,4 +1,4 @@
---criar uma função para calcular o total de livros
+ --criar uma função para calcular o total de livros
 create or replace function total_livros(nome_livro varchar)
 
 --Criar uma função para calcular o total de livros
